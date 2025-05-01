@@ -1,112 +1,170 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>宝塚 万助屋｜あなたの“ちょっと困った”をすぐ解決！</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>宝塚 万助屋｜暮らしの「ちょっと困った」に寄り添います</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f5f5f5;
+      background: #f8f8f6;
       color: #333;
+      font-family: 'Noto Sans JP', sans-serif;
     }
     header {
-      background: #006666;
+      background: #1a1a1a;
       color: white;
-      padding: 1.2em;
+      padding: 1em;
       position: sticky;
       top: 0;
       z-index: 1000;
-    }
-    nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      font-family: 'Noto Serif JP', serif;
     }
     nav a {
       color: white;
-      margin: 0.5em 1em;
+      margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1564518098550-7c427de26caa?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+    .hero h2 {
+      font-size: 1.8em;
+      font-family: 'Noto Serif JP', serif;
+      background: rgba(0,0,0,0.4);
+      padding: 0.5em 1em;
+      border-radius: 5px;
+    }
     main {
-      padding: 2em 1em;
       max-width: 900px;
       margin: auto;
+      padding: 2em 1em;
     }
     section {
-      margin-bottom: 3em;
       background: white;
+      margin-bottom: 2em;
       padding: 1.5em;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
     h2 {
-      color: #006666;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.4em;
+      border-left: 6px solid #bfa46f;
+      padding-left: 0.6em;
+      color: #1a1a1a;
+      margin-bottom: 1em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 0.6em;
+      line-height: 1.6;
+    }
+    .line-button {
+      display: inline-block;
+      background: #06C755;
+      color: white;
+      padding: 0.8em 1.4em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .line-button:hover {
+      background: #05a84d;
     }
     footer {
-      background: #006666;
+      background: #1a1a1a;
       color: white;
       text-align: center;
       padding: 1em;
-    }
-    .line-button {
-      background: #06C755;
-      color: white;
-      padding: 0.8em 1.5em;
-      border-radius: 8px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .line-button:hover {
-      background: #05b14d;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1 style="text-align:center;">宝塚 万助屋</h1>
+  <h1>宝塚 万助屋</h1>
   <nav>
-    <a href="#service">サービス</a>
+    <a href="#menu">お品書き</a>
     <a href="#price">料金</a>
-    <a href="#about">万助屋とは</a>
-    <a href="#contact">依頼する</a>
+    <a href="#about">ご挨拶</a>
+    <a href="#contact">ご依頼</a>
   </nav>
 </header>
 
+<div class="hero">
+  <h2>暮らしの「ちょっと困った」今すぐ解決</h2>
+</div>
+
 <main>
-  <section id="service">
-    <h2>サービス内容</h2>
+
+  <section id="menu">
+    <h2>お品書き</h2>
     <ul>
-      <li>草むしり・庭掃除（5,000円〜／1時間）</li>
-      <li>生活お手伝い（掃除・買い物など）</li>
-      <li>スマホ・パソコンお助け相談（優しく教えます）</li>
-      <li>手紙・書類の代筆（内容盛ります）</li>
-      <li>メルカリ出品代行（撮影・説明まかせて）</li>
-      <li>お話し相手・見守り訪問（30分：笑顔保証付き）</li>
-    </ul>
-  </section>
-    <section id="price">
-    <h2>料金</h2>
-    <p>わかりやすく安心な価格設定です：</p>
-    <ul>
-      <li>基本料金：1時間 4,000円〜</li>
-      <li>30分見守り／話し相手：3,000円〜</li>
-      <li>出張費：宝塚市内＝無料、市外＋500円〜</li>
+      <li>草むしり・お庭掃除・剪定</li>
+      <li>掃除・買い物代行・日常の手伝い</li>
+      <li>スマホ・パソコンの使い方サポート</li>
+      <li>手紙・書類の代筆</li>
+      <li>メルカリ等 出品代行</li>
+      <li>お話し相手・見守り訪問</li>
     </ul>
   </section>
 
+  <section id="price">
+    <h2>料金目安</h2>
+    <ul>
+      <li>基本作業：1時間 4,000円〜</li>
+      <li>見守り・話し相手：30分 3,000円〜</li>
+      <li>宝塚市内出張費：無料（市外＋500円〜）</li>
+    </ul>
+    <p>※ 正式なお見積もりは内容をお聞きしてからご提示いたします。</p>
+  </section>
+
   <section id="about">
-    <h2>万助屋とは？</h2>
+    <h2>ご挨拶</h2>
     <p>
-      「業者に頼むほどじゃないけど、誰かに助けてほしい」<br>
-      そんな時に、ふらっと呼べるあなたの町の“ちょうどいい助っ人”。<br><br>
-      宝塚の街に根ざして、あなたの「困った」を即サポート！<br>
-      <strong>迷ったらまず、LINEください。</strong
+      万助屋は宝塚の地に根ざした、地域密着型のよろずサポート屋です。<br>
+      「業者に頼むほどでもないけど、誰かに助けてほしい」<br>
+      そんなとき、思い出していただける存在を目指しています。
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>奉公の申込み</h2>
+    <p>LINEから「こんにちは」と送っていただくだけでご依頼完了！</p>
+    <a class="line-button" href="https://lin.ee/your-link" target="_blank">LINEで申し込む</a>
+    <p style="font-size: 0.9em; margin-top: 1em;">※ 上記リンクは仮のものです。実際のLINE URLに差し替えてください。</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 宝塚 万助屋｜暮らしの「困った」は、まずご相談を。
+</footer>
+
+</body>
+</html>
